@@ -147,8 +147,8 @@ Instead of disjointed daily exercises, students work on a single continuous pipe
 | Day | Topic | Details / Labs |
 | :--- | :--- | :--- |
 | **Day 1** | Storytelling & Streamlit Data Apps | Principles of data storytelling and dashboard layout. **Python Data Viz:** Introduction to **Streamlit** (widgets, state management, caching). Lab: Connect Streamlit to BigQuery/Snowflake and build an interactive data app with filters and plots. |
-| **Day 2** | BI Tool Focus — Day 1 | **TBD by Client:** Hands-on lab for the first selected BI tool (e.g., Looker LookML explores or Tableau calculated fields/caching). |
-| **Day 3** | BI Tool Focus — Day 2 | **TBD by Client:** Hands-on lab for the second selected BI tool (e.g., Strategy desktop/web configuration or ThoughtSpot AI search analytics). |
+| **Day 2** | BI Tool Focus — Day 1 | Tableau, Thoughtspot, Looker |
+| **Day 3** | BI Tool Focus — Day 2 | Tableau, Thoughtspot, Looker |
 | **Day 4** | Comparative BI Architecture | Architectural review: self-service reporting models, semantic layers, data caching/scheduling, and enterprise access controls. |
 | **Day 5** | Capstone Preparation | **Capstone Kickoff:** Dataset reveal (e.g. NYC Taxi or client-specific data), project brief, team formation, and initial exploratory analysis. |
 
