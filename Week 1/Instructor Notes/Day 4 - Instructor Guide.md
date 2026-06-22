@@ -48,12 +48,12 @@ Use this exact schedule, supported by the prompts, boundaries, and facilitation 
 | 9:40-10:00 | Storage and compute separation | 7-9 | Independent scaling, shared data, cost, and governance responsibilities. |
 | 10:00-10:15 | Break | | |
 | 10:15-11:00 | Formats, compression, file size, and layout | 10-15 | Organize a landing zone; connect layout to efficient reads and operations. |
-| 11:00-11:40 | Lifecycle and cost | 18-19 | Hot/warm/cold/archive plus recovery, retention, holds, and lock. |
-| 11:40-12:00 | Security, recovery, retention, and preflight | 19-20 | Run the 15-minute demo, then use 5 minutes to brief the required lab and transition. |
+| 11:00-11:40 | Lifecycle and cost | 16-17 | Hot/warm/cold/archive plus recovery, retention, holds, and lock. |
+| 11:40-12:00 | Security, recovery, retention, and preflight | 17, 20 | Run the 15-minute demo, then use 5 minutes to brief the required lab and transition. |
 | 12:00-1:00 | Lunch | | |
 | 1:00-2:40 | Required Cloud Storage landing-zone lab | 20 | Coach and observe; do not repeat the lab as a demo. |
 | 2:40-2:50 | Break | | |
-| 2:50-3:30 | Required query-in-place mini-lab | 16-17, 21 | Schema-on-read, external table, bytes processed, limitations. |
+| 2:50-3:30 | Required query-in-place mini-lab | 18-19, 21 | Schema-on-read, external table, bytes processed, limitations. |
 | 3:30-4:15 | Team storage-convention design | 21 | Require all design decisions listed below. |
 | 4:15-4:45 | NYC Taxi Day 5 handoff | 22 | Turn today's storage choices into tomorrow's pipeline inputs. |
 | 4:45-5:00 | Exit ticket and recap | 22 | Collect the three responses before dismissal. |
@@ -121,7 +121,7 @@ This demonstration proves readiness and creates shared observations. Prepare the
 
 2. **Inspect one prepared private bucket and object (6 min).** Show the bucket's region, uniform bucket-level access, and public access prevention, then open one object's inspection screen. Point out its full name/prefix, size, type, and authenticated access. Explain why compute/data region choices can affect latency and network cost.
 
-3. **Preview one external query estimate (6 min).** Open the prepared BigQuery external table, show its source URI/schema, paste one supplied query, and use the validator or dry-run estimate to show bytes that will be processed. Stop before running the query; learners will execute and interpret it in the mini-lab.
+3. **Preview one external query estimate (6 min).** Open the prepared BigQuery external table, show its source URI/schema, and paste one supplied query. Explain that the validator or dry run may report `0 B`, an unavailable estimate, or only a lower bound for external data; do not present that value as actual bytes processed. Stop before running the query. In the afternoon mini-lab, learners run the query and interpret actual bytes processed from the completed query's **Job information**.
 
 The demo ends here. Do not demonstrate lifecycle configuration, version restoration, or signed-URL creation before the landing-zone lab.
 
