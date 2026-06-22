@@ -11,7 +11,7 @@
 | Week | Day | Title | Technologies Introduced / Used |
 |------|-----|-------|-------------------------------|
 | **1** | D1 | Data Engineering Foundations | Concepts only: batch vs streaming, modern data stack, DE vs DA/DS roles |
-| **1** | D2 | Cloud Fundamentals | **GCP** (overview), **AWS** (overview), IAM (principals/roles/resources), billing budgets |
+| **1** | D2 | Cloud Fundamentals | **GCP** (overview), **AWS** (overview), IAM (principals/roles/resources), billing budgets; **BigQuery Sandbox guided preview** using provided GoogleSQL (not formal SQL instruction) |
 | **1** | D3 | Developer Environment Setup | **GitHub**, **GitHub Codespaces**, **VS Code**, Git (branch/commit/PR), Python venv |
 | **1** | D4 | Cloud Object Storage | **GCS** (buckets, storage classes, lifecycle), **S3** (comparison), `gcloud storage` CLI, `aws s3` CLI |
 | **1** | D5 | Data Architectures & Pipeline Design | **Draw.io** (architecture diagrams); Lambda, Kappa, Medallion patterns |
@@ -77,8 +77,8 @@ Organized by platform / tool family. ★ = first introduced.
 | **GCP** (platform overview) | W1D2 ★ | throughout |
 | **IAM** (GCP) | W1D2 ★ | W3D5, W6D3 |
 | **GCS** (Google Cloud Storage) | W1D4 ★ | W2D4, W3D4, W5D4, W8D2 |
-| **BigQuery** | W3D2 ★ | W3D3, W3D5, W4D2, W6D3, W6D4, W8D3 |
-| **GoogleSQL** | W3D2 ★ | W3D3, W4D2, W6D4 |
+| **BigQuery** | W1D2 guided preview ★ | W3D2–D3 formal instruction, W3D5, W4D2, W6D3–D4, W8D3 |
+| **GoogleSQL** | W1D2 copy/paste preview ★ | W3D2–D3 formal instruction, W4D2, W6D4 |
 | **Pub/Sub** | W3D4 ★ | |
 | **Apache Beam** | W3D4 ★ | |
 | **Dataflow** | W3D4 ★ | W8D2 |
@@ -177,7 +177,7 @@ Organized by platform / tool family. ★ = first introduced.
 
 | Rule | Detail |
 |------|--------|
-| BigQuery SQL | **GoogleSQL only** — legacy SQL sunset June 2026 |
+| BigQuery SQL | **GoogleSQL only** — Legacy SQL availability is restricted for many projects after June 1, 2026 |
 | Databricks tier | **Free Edition (serverless)** — never "Community Edition" |
 | Knowledge Catalog | Renamed from Dataplex, April 2026 |
 | GCP AI SDK | **`google-genai`** only — `google-generativeai` is deprecated |

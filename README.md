@@ -42,7 +42,7 @@ These platform facts were verified in June 2026 and supersede any earlier naming
 
 | Platform | What changed / what to teach |
 | :--- | :--- |
-| **GCP DE** | Dataplex renamed **Knowledge Catalog** (Apr 2026). BigQuery legacy SQL sunset June 2026 — teach **GoogleSQL only**. **BigQuery Data Engineering Agent** now GA (natural-language pipeline building) . Dataflow lineage in Knowledge Catalog is GA. |
+| **GCP DE** | Dataplex renamed **Knowledge Catalog** (Apr 2026). BigQuery began restricting Legacy SQL availability after June 1, 2026 — teach **GoogleSQL only**. **BigQuery Data Engineering Agent** now GA (natural-language pipeline building). Dataflow lineage in Knowledge Catalog is GA. |
 | **GCP AI** | **Vertex AI** rebranded **Gemini Enterprise Agent Platform**; unified **google-genai SDK** replaces the deprecated `google-generativeai` package. Current models: Gemini 2.5 family (stable) and 3.x. Gemini callable from BigQuery SQL (`ML.GENERATE_TEXT` / AI functions) — DE-native GenAI pattern. |
 | **AWS DE** | Focus on **SageMaker Lakehouse + S3 Tables (managed Iceberg) + Glue**. EMR still valid for the Spark deployment day; **S3 Tables** for Apache Iceberg. |
 | **Snowflake** | **dbt Projects on Snowflake** runs dbt natively (incl. Fusion engine) . **Openflow** (managed NiFi) = ingestion. Cortex: **AISQL functions** (COMPLETE, CLASSIFY, SUMMARIZE…). Use current naming in slides. |
@@ -62,7 +62,7 @@ These platform facts were verified in June 2026 and supersede any earlier naming
 | Day | Topic | Details / Labs |
 | :--- | :--- | :--- |
 | **Day 1** | Data Primer & DE Roles | Types of data (structured, semi-structured, unstructured), batch vs. streaming concepts, the Modern Data Stack, and roles in DE. |
-| **Day 2** | Cloud Fundamentals | Core concepts: IaaS vs. PaaS vs. SaaS. Conceptual comparison of GCP vs. AWS services. IAM basics and billing management. |
+| **Day 2** | Cloud Fundamentals | Core concepts: IaaS vs. PaaS vs. SaaS. Conceptual comparison of GCP vs. AWS services. IAM basics and billing management. Guided BigQuery Sandbox preview using Citi Bike public data and the bytes-processed cost model. |
 | **Day 3** | Environment Setup | Setting up VS Code and GitHub Codespaces. Installing Python, virtual environments (`venv`), pip, and Git basics. Setting up cloud accounts. |
 | **Day 4** | Hands-On Cloud Storage | Lab: Create and secure a GCS bucket (console + CLI), configure lifecycle rules and versioning, compare to AWS S3. Teams design their pipeline bucket/prefix convention. |
 | **Day 5** | Data Architectures & Pipeline Thread | Core patterns: Lambda, Kappa, and Medallion (Bronze/Silver/Gold). Architecture diagramming grammar (Draw.io). **Pipeline kickoff:** NYC Taxi dataset introduction. Lab: Teams design their end-to-end conceptual pipeline architecture — the living document they revise in Weeks 3, 5, and 7. |
@@ -98,7 +98,7 @@ These platform facts were verified in June 2026 and supersede any earlier naming
 | :--- | :--- | :--- |
 | **Day 1** | Modern Data Warehousing | ETL vs. ELT, data lakes vs. data warehouses vs. lakehouses. Schema design: star schemas, snowflake schemas, and columnar storage. |
 | **Day 2** | GCP BigQuery Foundations | BQ Architecture: storage vs. compute decoupling. Managing datasets and tables (internal vs. external), partitioning, clustering, and console query execution. |
-| **Day 3** | SQL Primer (BigQuery) | Writing queries *by hand* in **GoogleSQL only** (legacy SQL sunset June 2026): SELECT, WHERE, JOINs, GROUP BY, aggregations, and HAVING. Querying the high-volume data loaded into BigQuery. |
+| **Day 3** | SQL Primer (BigQuery) | Writing queries *by hand* in **GoogleSQL only** (Legacy SQL availability is restricted for many projects after June 1, 2026): SELECT, WHERE, JOINs, GROUP BY, aggregations, and HAVING. Querying the high-volume data loaded into BigQuery. |
 | **Day 4** | Ingestion & Batch Pipelines | Event streaming vs. batch ingestion. Lab: Spin up GCP Pub/Sub topics. Introduction to Apache Beam concepts and running a GCP Dataflow batch pipeline (loading GCS files into BigQuery). |
 | **Day 5** | Orchestration & GCP Governance | Core orchestration concepts. Lab: Introduction to Cloud Composer (Airflow) DAGs. **GCP Security & Governance:** IAM roles, **Knowledge Catalog** (formerly Dataplex) data cataloging, and PII/PHI column-level masking in BigQuery. |
 
