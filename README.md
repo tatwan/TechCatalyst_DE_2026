@@ -38,14 +38,16 @@ Instead of disjointed daily exercises, students work on a single continuous pipe
 
 These platform facts were verified in June 2026 and supersede any earlier naming. See `Curriculum_Mapping_2026.md` for the day-by-day mapping.
 
+* Instructor Note: for any changes, conflicts, I will keep this table updated.
+
 | Platform | What changed / what to teach |
 | :--- | :--- |
-| **GCP DE** | Dataplex renamed **Knowledge Catalog** (Apr 2026). BigQuery legacy SQL sunset June 2026 — teach **GoogleSQL only**. **BigQuery Data Engineering Agent** now GA (natural-language pipeline building) — great Week 6 demo. Dataflow lineage in Knowledge Catalog is GA. |
-| **GCP AI** | Vertex AI rebranded **Gemini Enterprise Agent Platform**; unified **google-genai SDK** replaces the deprecated `google-generativeai` package. Current models: Gemini 2.5 family (stable) and 3.x. Gemini callable from BigQuery SQL (`ML.GENERATE_TEXT` / AI functions) — DE-native GenAI pattern. |
-| **AWS DE** | Story is now **SageMaker Lakehouse + S3 Tables (managed Iceberg) + Glue**. EMR still valid for the Spark deployment day; mention S3 Tables when teaching Iceberg. |
-| **Snowflake** | **dbt Projects on Snowflake** runs dbt natively (incl. Fusion engine) — show after local dbt. **Openflow** (managed NiFi) = ingestion story, mention conceptually. Cortex: **AISQL functions** (COMPLETE, CLASSIFY, SUMMARIZE…). Use current naming in slides. |
-| **dbt** | **Fusion engine** (Rust, 30× faster parse) + official **VS Code extension** (requires Fusion, free). Teach dbt with Fusion + VS Code; concepts identical to Core. |
-| **Databricks** | Community Edition is retired → **Free Edition** (serverless). Delta Lake, notebooks, SQL, basic Unity Catalog all work. Jobs/pipelines now branded **Lakeflow**. Certifications are out of scope for this cohort. |
+| **GCP DE** | Dataplex renamed **Knowledge Catalog** (Apr 2026). BigQuery legacy SQL sunset June 2026 — teach **GoogleSQL only**. **BigQuery Data Engineering Agent** now GA (natural-language pipeline building) . Dataflow lineage in Knowledge Catalog is GA. |
+| **GCP AI** | **Vertex AI** rebranded **Gemini Enterprise Agent Platform**; unified **google-genai SDK** replaces the deprecated `google-generativeai` package. Current models: Gemini 2.5 family (stable) and 3.x. Gemini callable from BigQuery SQL (`ML.GENERATE_TEXT` / AI functions) — DE-native GenAI pattern. |
+| **AWS DE** | Focus on **SageMaker Lakehouse + S3 Tables (managed Iceberg) + Glue**. EMR still valid for the Spark deployment day; **S3 Tables** for Apache Iceberg. |
+| **Snowflake** | **dbt Projects on Snowflake** runs dbt natively (incl. Fusion engine) . **Openflow** (managed NiFi) = ingestion. Cortex: **AISQL functions** (COMPLETE, CLASSIFY, SUMMARIZE…). Use current naming in slides. |
+| **dbt** | **Fusion engine** (Rust, 30× faster parse) + official **VS Code extension** (requires Fusion, free). Will cover dbt with Fusion + VS Code; concepts identical to Core. |
+| **Databricks** | Community Edition is retired → **Free Edition** (serverless which is what we will use in this class). Delta Lake, notebooks, SQL, basic Unity Catalog all work. Jobs/pipelines now branded **Lakeflow**. Certifications are out of scope for this cohort. |
 
 ---
 
