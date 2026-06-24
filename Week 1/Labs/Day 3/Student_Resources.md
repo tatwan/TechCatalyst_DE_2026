@@ -60,7 +60,7 @@ Why it is gaining adoption: it is fast (compiled and parallelized), it is one to
 
 **conda:** https://docs.conda.io/projects/conda/en/stable/ and [conda-forge](https://conda-forge.org/). conda manages both environments and packages, including non-Python system libraries that pip cannot install. Packages come from channels (conda-forge is the big community one). Mixing conda and pip works but needs care: install conda packages first, then pip, and do not double-install the same package.
 
-> **Course baseline:** we use venv plus pip plus requirements.txt across the program. conda and uv are for breadth and modern awareness; the optional Lab A stretch lets you try uv.
+> **Course baseline:** we use venv plus pip plus requirements.txt across the program. conda and uv are for breadth and modern awareness; **Lab A** is the hands-on lab where you run all three side-by-side (uv is the focus).
 
 ---
 
@@ -78,7 +78,7 @@ Why it is gaining adoption: it is fast (compiled and parallelized), it is one to
 
 ## Troubleshooting
 
-**Course guide:** see `GitHub Troubleshooting.md` in this folder (auth errors, Codespace boot failures, common Git mistakes). The most common live issue is the 403 on first push from a blank Codespace; Lab B handles it two ways.
+**Course guide:** see `GitHub Troubleshooting.md` in this folder (auth errors, Codespace boot failures, common Git mistakes). The most common live issue is the 403 on first push from a blank Codespace; Lab C handles it two ways.
 **GitHub status page:** https://githubstatus.com (if Codespaces will not launch and nothing else explains it, check here first).
 
 ---
@@ -93,5 +93,5 @@ Why it is gaining adoption: it is fast (compiled and parallelized), it is one to
 | ☐ | `hello_data.py` reads the sample CSV and prints per-state totals and a `200` |
 | ☐ | `.venv/` is git-ignored and does not appear in `git status` |
 | ☐ | At least 3 commits visible in `git log --oneline` |
-| ☐ | Repo published to GitHub; a clone verified to match (Lab B) |
+| ☐ | Repo published to GitHub; a clone verified to match (Lab C) |
 | ☐ | Partner has verified every checklist item on your machine |
