@@ -90,7 +90,7 @@ A short decision brief with:
 - Completed trade-off table.
 - 2 risks and their mitigations.
 - One or two sentences placing the check in your Week 1 architecture, and at least two of the Week 1 lenses applied (IAM, version control, object storage, or architecture).
-- 2-minute presentation.
+- 5-minute presentation (use your slides).
 
 ## What A Strong Brief Looks Like
 
