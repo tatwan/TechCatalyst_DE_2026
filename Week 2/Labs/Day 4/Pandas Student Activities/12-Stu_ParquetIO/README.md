@@ -1,6 +1,6 @@
 # Parquet In, Parquet Out
 
-Today's mini-project asks you to write your cleaned data as parquet, not CSV. This activity is the isolated warm up: before you wire parquet into the medallion pipeline, get comfortable with what parquet actually does differently from CSV.
+The deferred medallion mini-capstone asks you to write cleaned data as parquet, not CSV. This activity is the isolated warm up: before you wire parquet into the medallion pipeline, get comfortable with what parquet actually does differently from CSV.
 
 ## Instructions
 
@@ -20,7 +20,7 @@ Using the [starter file](Unsolved/parquet_io.ipynb) and `Resources/insurance_cla
 
 ## Challenge
 
-Add a `claim_amount` filter to keep only claims over $5,000, then write that filtered subset to a second parquet file, partitioned by `region` using `df.to_parquet(path, partition_cols=["region"])`. Look at what `partition_cols` does to the folder structure it creates. This is the same partitioning idea behind `ingest_date=YYYY-MM-DD/` in your bronze zone today.
+Add a `claim_amount` filter to keep only claims over $5,000, then write that filtered subset to a second parquet file, partitioned by `region` using `df.to_parquet(path, partition_cols=["region"])`. Look at what `partition_cols` does to the folder structure it creates. This is the same partitioning idea behind `ingest_date=YYYY-MM-DD/` in a bronze zone.
 
 ## Hint
 

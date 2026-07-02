@@ -34,7 +34,7 @@ estimates below as fixed):
 | `README.md` | This guide and the day's structure |
 | `Reading_Ingesting_Data_from_REST_APIs.md` | Concept explainer: why and how API ingestion works |
 | `Student_Resources.md` | Curated references and quick code patterns |
-| `Activity_0_UV_API_Project_Setup.md` | Pre-lab UV project setup (shared repo-root `.venv`) |
+| `Activity_0_UV_API_Project_Setup.md` | Pre-lab UV project setup for `student-work/week2/day3/` |
 | `Activity_1_HTTP_and_REST_Fundamentals.ipynb` | Guided notebook: request/response anatomy, pagination, rate limits, requests vs httpx, and building a real multi-city weather dataset |
 | `Activity_2_Async_SDKs_and_the_AI_Era.ipynb` | Guided notebook: sync vs async, API vs SDK, calling Gemini both via SDK and raw HTTP |
 | `Activity_3_DataFrame_Fundamentals.ipynb` | Guided notebook: pandas and Polars basics on your own weather data, bridge to Day 4 |
@@ -54,29 +54,29 @@ non-Taxi, per the Week 2 dataset rule.
 | Activity 1 and 2 notebooks | Completed, including the multi-city `weather_records` list |
 | Activity 3 notebook | Completed, `df` and `pldf` with derived columns |
 | `weather_explorer.py` | Working independent-build CLI (min/max/current temperature, with retry) |
-| `pyproject.toml` and `uv.lock` | Shared Week 2 UV project files, at the repo root |
+| `pyproject.toml` and `uv.lock` | Day 3 UV project files in `student-work/week2/day3/` |
 | Pull request | Opened, with two substantive review comments on a teammate's PR |
 | Exit ticket | Completed `quiz/Day_3_Exit_Ticket.md` |
 | Group recommendation | One-page memo or slide plus a 2 minute team presentation |
 
 ## Setup
 
-Complete `Activity_0_UV_API_Project_Setup.md` first. Day 3 does not start a new
-per-day project. It creates **one shared UV project at the repo root** (the
-folder VS Code already has open), reused for the rest of Week 2, so VS Code
-auto-detects its `.venv` as your interpreter and notebook kernel. From the repo
-root:
+Complete `Activity_0_UV_API_Project_Setup.md` first. Day 3 uses its own UV
+project at `student-work/week2/day3/`. From the repo root:
 
 ```bash
+mkdir -p student-work/week2/day3
+cd student-work/week2/day3
 uv init
 uv add requests httpx python-dotenv boto3 google-genai pandas polars ipykernel
 ```
 
 `ipykernel` is what lets VS Code use this environment as a notebook kernel. The
-`.venv`, `pyproject.toml`, and `uv.lock` are created at the repo root and are
-gitignored, so `git pull` never touches them. Your own work (copied notebooks,
-`weather_explorer.py`, any `data/` you create) goes under `student-work/week2/`
-so it never conflicts with a `git pull`. The full step-by-step, including the
+`.venv`, `pyproject.toml`, and `uv.lock` are created in
+`student-work/week2/day3/`. Select `student-work/week2/day3/.venv/bin/python` as
+the VS Code interpreter and notebook kernel. Keep copied notebooks,
+`weather_explorer.py`, and any `data/` you create under `student-work/week2/day3/`
+so they never conflict with a `git pull`. The full step-by-step, including the
 first-time kernel selection in VS Code, is in
 `Activity_0_UV_API_Project_Setup.md`.
 
@@ -98,15 +98,15 @@ Lab** (`Bonus_Lab_Weather_API_Explorer.ipynb`) walks you through building
 function, several cities (sync then async), add a retry with backoff, and
 finally ship it as a command-line tool. The finished script is the deliverable.
 
-You build it in your work folder at `student-work/week2/`, starting from
+You build it in your work folder at `student-work/week2/day3/`, starting from
 `starter/weather_explorer_starter.py` (copied in during Activity 0). It uses
 Open-Meteo, which is free and keyless.
 
-Run it from your work folder; `uv run` finds the repo-root environment
+Run it from your work folder; `uv run` finds the Day 3 project environment
 automatically:
 
 ```bash
-cd student-work/week2
+cd student-work/week2/day3
 uv run python weather_explorer.py "Hartford,US" 41.7658 -72.6734
 ```
 
@@ -141,11 +141,11 @@ Commit these under your course repo (via a pull request, then leave two
 substantive review comments on a teammate's PR):
 
 ```text
-student-work/week2/weather_explorer.py
-student-work/week2/Activity_1_HTTP_and_REST_Fundamentals.ipynb
-student-work/week2/Activity_2_Async_SDKs_and_the_AI_Era.ipynb
-student-work/week2/Activity_3_DataFrame_Fundamentals.ipynb
+student-work/week2/day3/weather_explorer.py
+student-work/week2/day3/Activity_1_HTTP_and_REST_Fundamentals.ipynb
+student-work/week2/day3/Activity_2_Async_SDKs_and_the_AI_Era.ipynb
+student-work/week2/day3/Activity_3_DataFrame_Fundamentals.ipynb
 ```
 
-The shared environment files (`pyproject.toml`, `uv.lock`) live at the repo
-root, and `.venv/` is gitignored, so those are not committed as student work.
+The day environment files (`pyproject.toml`, `uv.lock`) live in
+`student-work/week2/day3/`, and `.venv/` is gitignored.
