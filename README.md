@@ -8,6 +8,8 @@ This hands-on program is designed for fresh graduates and junior data engineers 
 
 The 2026 curriculum shifts primary cloud focus to **Google Cloud Platform (GCP)** (with AWS as a secondary conceptual overlay), introduces modern data stack standards with **Snowflake** and **dbt**, integrates **AI-native features** (Cortex AI, Gemini API, and Vertex AI), incorporates **Big Data processing with PySpark & Databricks**, and establishes a strict, scaffolded developer progression to teach solid coding practices before introducing AI coding assistants like **GitHub Copilot**.
 
+![outline](images/outline.png)
+
 ---
 
 ## Strategic Pedagogy: The Coding & AI Progression
