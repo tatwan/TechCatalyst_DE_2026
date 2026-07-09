@@ -90,7 +90,7 @@ Dask can run in the shared environment if installed there. We include it in `.ve
 
 ## Bonus Tool Takeaways
 
-For the quick cross-tool comparison, see `Bonus_Tool_Takeaways.md`.
+Each bonus notebook ends with the same quick comparison table so you can keep the tools in perspective.
 
 ## Success Criteria
 

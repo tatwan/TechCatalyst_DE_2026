@@ -60,8 +60,9 @@ Today you do not run `uv init` and you do not create a new `.venv`. You reuse th
    ```bash
    mkdir -p student-work/week3/day1
    cp "Week 3/Labs/Day 1/Activity_1_Python_Refresh_Drills.ipynb" student-work/week3/day1/
-   cp "Week 3/Labs/Day 1/Activity_2_DataFrame_Library_Comparison.ipynb" student-work/week3/day1/
-   cp "Week 3/Labs/Day 1/Activity_3_Automation_Drills.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Activity_2_Pandas_Polars_Quick_Drills.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Activity_3_DataFrame_Cleaning_Lab.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Activity_4_Automation_Drills.ipynb" student-work/week3/day1/
    cp "Week 3/Labs/Day 1/starter/taxi_review.py" student-work/week3/day1/
    cp -R "Week 3/Labs/Day 1/data" student-work/week3/day1/
    ```
@@ -70,7 +71,10 @@ Today you do not run `uv init` and you do not create a new `.venv`. You reuse th
 
    ```bash
    cp "Week 3/Labs/Day 1/Bonus_Lab_Parquet_vs_CSV.ipynb" student-work/week3/day1/
-   cp "Week 3/Labs/Day 1/Bonus_Lab_DataFrame_Engines.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Bonus_Dask_Intro.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Bonus_Modin_Intro.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Bonus_FireDucks_Intro.ipynb" student-work/week3/day1/
+   cp "Week 3/Labs/Day 1/Bonus_Lab_Engine_Probes.md" student-work/week3/day1/
    ```
 
 5. Copy the carryover medallion notebook, script scaffold, and data:
@@ -103,7 +107,7 @@ If a notebook cell fails with `ModuleNotFoundError` during the day, you have two
 - From any terminal: `uv add <package>` run at the repo root, then restart the notebook kernel.
 - From inside the notebook: run `!uv pip install <package>` in a cell, then restart the kernel. This installs into the same repo-root `.venv` but does not record the package in `pyproject.toml`, so prefer `uv add` when you can.
 
-One exception today: do not install Modin or FireDucks into the shared environment. They pin an older pandas and would downgrade pandas 3 for everything else. The `Bonus_Lab_Engine_Probes.md` lab shows the safe pattern: a second environment with a different name.
+One exception today: do not install Modin or FireDucks into the shared environment. They have their own dependency stacks and may pull a different pandas version than the required labs use. The `Bonus_Lab_Engine_Probes.md` lab shows the safe pattern: a second environment with a different name.
 
 ## Expected Output
 
@@ -116,8 +120,9 @@ Your work folder should contain:
 ```text
 student-work/week3/day1/
   Activity_1_Python_Refresh_Drills.ipynb   (your copy)
-  Activity_2_DataFrame_Library_Comparison.ipynb   (your copy)
-  Activity_3_Automation_Drills.ipynb   (your copy)
+  Activity_2_Pandas_Polars_Quick_Drills.ipynb   (your copy)
+  Activity_3_DataFrame_Cleaning_Lab.ipynb   (your copy)
+  Activity_4_Automation_Drills.ipynb   (your copy)
   taxi_review.py   (your copy)
   medallion_etl.py   (your copy)
   data/taxi_trip_review.csv
@@ -131,7 +136,7 @@ Extra files are fine. The key is that your editable copies are inside `student-w
 - `uv run python -c "import pandas, polars, pyarrow; print('env ok')"` prints `env ok` from the repo root.
 - `pandas.__version__` starts with `3.`.
 - No `.venv` exists inside `student-work/week3/day1/`. The only project environment is the repo-root `.venv`.
-- The three Day 1 activity notebooks, `taxi_review.py`, `medallion_etl.py`, and `data/` exist in your work folder.
+- The four Day 1 activity notebooks, `taxi_review.py`, `medallion_etl.py`, and `data/` exist in your work folder.
 - Your notebooks use the repo-root **.venv** kernel.
 - You can explain why you are not editing files directly under `Week 3/Labs/Day 1/`.
 
