@@ -1,5 +1,7 @@
 # AWS Glue Visual ETL: Building a Medallion Pipeline Without Code
 
+![ChatGPT Image Jul 10, 2026, 08_05_05 PM](images/ChatGPT Image Jul 10, 2026, 08_05_05 PM.png)
+
 **Module:** Week 3, Day 5 (AWS Glue ETL)
 **Estimated Time:** 90 to 120 minutes
 **Difficulty:** Beginner to Intermediate
