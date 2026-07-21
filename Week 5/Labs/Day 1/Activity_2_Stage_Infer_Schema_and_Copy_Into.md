@@ -214,7 +214,7 @@ USE SCHEMA TECHCATALYST.<YOUR_NAME>;
 
 -- 15. TODO: Record the COPY result, then validate:
 --     SELECT COUNT(*) FROM raw_yellow_tripdata_csv;
---     Expected: 7,232,642
+--     Expected: 7,124,755
 
 -- ============================================================
 -- PART D: Cross-format validation
